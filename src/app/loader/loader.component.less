@@ -1,0 +1,212 @@
+@import (reference) "../../less/variables.less";
+
+.loading-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+
+  .loading-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width:120px;
+
+    .loading-outer {
+      width:120px;
+      height:60px;
+      display: flex;
+      flex-wrap: nowrap;
+      transform: rotateX(180deg);
+      justify-content: space-between;
+  
+      > div {
+        width:2px;
+        height:0;
+        background-color:@color-green-main;
+      }
+  
+      > div:first-of-type {
+        animation: grow-one 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(2) {
+        animation: grow-two 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(3) {
+        animation: grow-three 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(4) {
+        animation: grow-four 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(5) {
+        animation: grow-five 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(6) {
+        animation: grow-six 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(7) {
+        animation: grow-seven 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(8) {
+        animation: grow-eight 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(9) {
+        animation: grow-nine 1.5s linear infinite;
+      }
+  
+      > div:nth-of-type(10) {
+        animation: grow-ten 1.5s linear infinite;
+      }
+    }
+
+    h2 {
+      color:@color-green-main;
+      font-family: @font-light;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 10px;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes grow-one {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:10%; }
+  30% { height:10%; }
+  40% { height:10%; }
+  50% { height:10%; }
+  60% { height:10%; }
+  70% { height:10%; }
+  80% { height:10%; }
+  90% { height:10%; }
+  100% { height:10%; }
+}
+@keyframes grow-two {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:20%; }
+  40% { height:20%; }
+  50% { height:20%; }
+  60% { height:20%; }
+  70% { height:20%; }
+  80% { height:20%; }
+  90% { height:20%; }
+  100% { height:20%; }
+}
+@keyframes grow-three {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:30%; }
+  40% { height:30%; }
+  50% { height:30%; }
+  60% { height:30%; }
+  70% { height:30%; }
+  80% { height:30%; }
+  90% { height:30%; }
+  100% { height:30%; }
+}
+@keyframes grow-four {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:30%; }
+  40% { height:40%; }
+  50% { height:40%; }
+  60% { height:40%; }
+  70% { height:40%; }
+  80% { height:40%; }
+  90% { height:40%; }
+  100% { height:40%; }
+}
+@keyframes grow-five {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:30%; }
+  40% { height:40%; }
+  50% { height:50%; }
+  60% { height:50%; }
+  70% { height:50%; }
+  80% { height:50%; }
+  90% { height:50%; }
+  100% { height:50%; }
+}
+@keyframes grow-six {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:30%; }
+  40% { height:40%; }
+  50% { height:50%; }
+  60% { height:60%; }
+  70% { height:60%; }
+  80% { height:60%; }
+  90% { height:60%; }
+  100% { height:60%; }
+}
+@keyframes grow-seven {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:30%; }
+  40% { height:40%; }
+  50% { height:50%; }
+  60% { height:60%; }
+  70% { height:70%; }
+  80% { height:70%; }
+  90% { height:70%; }
+  100% { height:70%; }
+}
+@keyframes grow-eight {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:30%; }
+  40% { height:40%; }
+  50% { height:50%; }
+  60% { height:60%; }
+  70% { height:70%; }
+  80% { height:80%; }
+  90% { height:80%; }
+  100% { height:80%; }
+}
+@keyframes grow-nine {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:30%; }
+  40% { height:40%; }
+  50% { height:50%; }
+  60% { height:60%; }
+  70% { height:70%; }
+  80% { height:80%; }
+  90% { height:90%; }
+  100% { height:90%; }
+}
+@keyframes grow-ten {
+  0% { height:0;}
+  10% { height:10%; }
+  20% { height:20%; }
+  30% { height:30%; }
+  40% { height:40%; }
+  50% { height:50%; }
+  60% { height:60%; }
+  70% { height:70%; }
+  80% { height:80%; }
+  90% { height:90%; }
+  100% { height:100%; }
+}

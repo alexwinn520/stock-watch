@@ -1,0 +1,8 @@
+<loader *ngIf="!tickersAreLoaded"></loader>
+
+<section *ngIf="tickersAreLoaded">
+  <input [(ngModel)]="tickerToSearch"/>
+  <div>
+    <p *ngFor="let ticker of tickerList | tickerFilter: tickerToSearch"> {{ticker.symbol}} </p>
+  </div>
+</section>
