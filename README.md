@@ -1,27 +1,11 @@
-# PopularBullBear
+# StockWatch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+A just-for-fun project to help research of US stock trends by displaying stock data in meaningful ways
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Planned features include:
+- Search for stock by ticker (currently implemented)
+- Search for stock by market sector
+- Display of individual stock's market trend by time periods including d3js charts for visualization
+    - Display of individual stock's major market events such as earnings releases, dividend payments, splits, etc to overlay the trend chart
+- Comparison of 2 (or more) stocks' trends over time periods with overlayed d3js line charts
+- Search for latest news / press about individual stock or company
