@@ -1,8 +1,12 @@
-<loader *ngIf="!tickersAreLoaded"></loader>
-
-<section *ngIf="tickersAreLoaded">
-  <input [(ngModel)]="tickerToSearch"/>
-  <div>
-    <p *ngFor="let ticker of tickerList | tickerFilter: tickerToSearch"> {{ticker.symbol}} </p>
-  </div>
-</section>
+<main>
+  <loader *ngIf="!tickersAreLoaded"></loader>
+  <section class="ticker-search-section" *ngIf="tickersAreLoaded">
+    <div class="search-box">
+      <input [(ngModel)]="tickerToSearch"/>
+      <i class="icon icon--Search" aria-label="search stock ticker"></i>
+    </div>
+    <div class="results-section">
+      <p *ngFor="let ticker of tickerList | tickerFilter: tickerToSearch">{{ticker.symbol}} {{ticker.name}}</p>
+    </div>
+  </section>
+</main>

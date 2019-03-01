@@ -1,0 +1,55 @@
+@import (reference) '../../less/variables.less';
+
+main {
+  .container-width;
+  padding-top: 50px;
+
+  .ticker-search-section {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+    .search-box {
+      border:1px solid @color-green-main;
+      width: 400px;
+      height: 50px;
+      padding: 0 15px;
+      display:flex;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      input {
+        width: 100%;
+        border: none;
+        line-height:30px;
+        background:transparent;
+        font-size: @size-md;
+        color:@color-green-light;
+      }
+
+      i {
+        font-size: @size-md;
+        color:@color-green-main;
+      }
+    }
+
+    .results-section {
+      width:400px;
+      display:flex;
+      flex-wrap: wrap;
+
+      p {
+        width:100%;
+        font-family: @font-light;
+        color:@color-green-light;
+        padding:10px 15px;
+        &:hover {
+          color:@color-black;
+          background-color:@color-green-light;
+          cursor:pointer;
+        }
+      }
+    }
+  }
+}
